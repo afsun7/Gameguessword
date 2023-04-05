@@ -1,4 +1,4 @@
-export const data = [
+[
   "ABOUT",
   "ABOVE",
   "ACTOR",
@@ -670,6 +670,5 @@ export const data = [
   "YEAST",
   "YIELD",
   "YOUNG",
-  "YOUTH",
-];
-export const robatWord = data[Math.floor(Math.random() * data.length + 1)];
+  "YOUTH"
+]

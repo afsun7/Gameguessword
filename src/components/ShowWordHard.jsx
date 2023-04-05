@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { robatWord } from "../../Api";
 
-export default function ({ words }) {
+export default function ({ words, robatWord, data }) {
   const [timer, setTimer] = useState(0);
   const [isActive, setIsActive] = useState(false);
 
@@ -20,10 +19,8 @@ export default function ({ words }) {
   }, [timer]);
   return (
     <>
-      <h3>React Stopwatch</h3>
-      <div className="stopwatch-card">
-        <p>{timer}</p> {/* here we will show timer */}
-      </div>
+      <h3>remaining time</h3>
+      <p>{timer}</p> {/* here we will show timer */}
       {timer < 100 ? (
         <>
           {words.length > 0 && (
@@ -67,13 +64,13 @@ export default function ({ words }) {
                             robatWord.split("").indexOf(item) === index
                           ) {
                             return (
-                              <span style={{ backgroundColor: "yellow" }}>
+                              <span style={{ backgroundColor: "green" }}>
                                 {item}
                               </span>
                             );
                           } else if (robatWord.split("").includes(item)) {
                             return (
-                              <span style={{ backgroundColor: "green" }}>
+                              <span style={{ backgroundColor: "yellow" }}>
                                 {item}
                               </span>
                             );

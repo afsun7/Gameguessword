@@ -1,7 +1,8 @@
-import { robatWord } from "../../Api";
+//import { robatWord } from "../../Api";
 
-export default function ({ words }) {
+export default function ({ words, robatWord, data }) {
   let arrayRobatWord = robatWord.split("");
+  console.log(robatWord);
 
   return (
     <>
@@ -43,13 +44,13 @@ export default function ({ words }) {
                         robatWord.split("").indexOf(item) === index
                       ) {
                         return (
-                          <span style={{ backgroundColor: "yellow" }}>
+                          <span style={{ backgroundColor: "green" }}>
                             {item}
                           </span>
                         );
                       } else if (robatWord.split("").includes(item)) {
                         return (
-                          <span style={{ backgroundColor: "green" }}>
+                          <span style={{ backgroundColor: "yellow" }}>
                             {item}
                           </span>
                         );

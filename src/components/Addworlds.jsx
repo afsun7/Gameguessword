@@ -1,8 +1,7 @@
 import "../module/ShowWord.css";
 import { useState } from "react";
-import { data, robatWord } from "../../Api";
 
-export default function ({ words, setWords }) {
+export default function ({ words, setWords, robatWord ,data}) {
   const [input, setInput] = useState("");
 
   function handelInput(e) {
