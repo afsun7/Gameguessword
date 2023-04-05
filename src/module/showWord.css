@@ -1,0 +1,69 @@
+#root {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, black, rgb(199, 105, 199));
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.text {
+  margin: 1rem 0;
+  height: 8vh;
+  border: 3px solid white;
+  background-color: rgba(233, 188, 219);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  width: 200px;
+  letter-spacing: 20px;
+}
+
+.wordList {
+  text-align: center;
+}
+.wordItems {
+  background-color: rgba(256, 256, 256, 0.15);
+
+  margin-top: 2vh;
+  padding: 10px;
+
+  border: 3px solid white;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  letter-spacing: 20px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  display: inline-block;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+}
+.listSpan {
+  display: flex;
+  gap: 3px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-size: 2rem;
+  animation-name: example;
+  animation-duration: 3s;
+}
+@keyframes example {
+  from {
+    font-size: 2rem;
+  }
+  to {
+    font-size: 3rem;
+  }
+}
